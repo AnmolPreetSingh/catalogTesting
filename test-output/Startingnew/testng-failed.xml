@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Startingnew]">
+  <parameter name="BrowserType" value="Chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="org.testng.reporters.FailedReporter"/>
+  </listeners>
+  <test name="testngTest(failed)">
+    <classes>
+      <class name="test.logintest">
+        <methods>
+          <include name="screenShot"/>
+          <include name="setUp"/>
+          <include name="mainTest2"/>
+        </methods>
+      </class> <!-- test.logintest -->
+    </classes>
+  </test> <!-- testngTest(failed) -->
+</suite> <!-- Failed suite [Startingnew] -->

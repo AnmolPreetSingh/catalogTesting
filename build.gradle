@@ -1,0 +1,11 @@
+defaultTasks 'helloagain'
+
+
+
+task hello <<{
+println 'Hello' 
+}
+
+task helloagain(dependsOn : 'hello')<<{
+println 'hello second time'
+}

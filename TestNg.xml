@@ -1,0 +1,16 @@
+<suite name="Startingnew">
+ <parameter name="BrowserType"  value="Chrome"/>
+   <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="org.testng.reporters.FailedReporter"/>
+   </listeners> 
+
+	<test name="testngTest">
+		<classes>
+		
+			<class name="test.logintest"/>
+		</classes>
+	</test>
+	
+</suite>
